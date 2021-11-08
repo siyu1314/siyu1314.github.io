@@ -1,6 +1,6 @@
 // 动态心跳
 $(document).ready(function(e){
-    $('.copyright').html('©2021 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 小宇');
+    $('.copyright').html('<font style=color:orange>'+'©2021 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 小宇'+'</font>');
 })
 
 $(document).ready(function(e){
@@ -9,7 +9,7 @@ $(document).ready(function(e){
 
 //本站运行时间
 function show_date_time(){
-$('.framework-info').html('小破站已经在灾难中存活了<span id="span_dt_dt" style="color: #fff;"></span>');
+$('.framework-info').html('<font style=color:orange>'+'小破站已经在灾难中存活了<span id="span_dt_dt" style="color: #fff;"></span>'+'</font>');
 window.setTimeout("show_date_time()", 1000);
 BirthDay=new Date("11/1/2021 0:0:0");
 today=new Date();
@@ -24,5 +24,5 @@ hrsold=Math.floor(e_hrsold);
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=Math.floor((e_hrsold-hrsold)*60);
 seconds=Math.floor((e_minsold-minsold)*60);
-span_dt_dt.innerHTML='<font style=color:pink>'+daysold+'</font> 天 <font style=color:#f391a9>'+hrsold+'</font> 时 <font style=color:#fdb933>'+minsold+'</font> 分 <font style=color:#a3cf62>'+seconds+'</font> 秒';
+span_dt_dt.innerHTML='<font style=color:orange>'+daysold+' 天 '+'</font><font style=color:orange>'+hrsold+' 时 '+'</font><font style=color:orange>'+minsold+' 分 '+'</font><font style=color:orange>'+seconds+' 秒 '+'</font>';
 }
