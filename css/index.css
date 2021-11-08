@@ -1340,14 +1340,17 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-*::-webkit-scrollbar-thumb {
-  background: var(--btn-bg);
+  width: 6px;
+  background-color: rgba(226,226,226,0);
 }
 *::-webkit-scrollbar-track {
-  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba(226,226,226,0);
+}
+*::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 2px;
+  background-color: #ffa500;
 }
 input::placeholder {
   color: var(--font-color);
@@ -1481,6 +1484,7 @@ a:hover {
   -o-transition: color 1s;
   -ms-transition: color 1s;
   transition: color 1s;
+  background-color: #8a8b8d !important;
 }
 .button--animated:before {
   position: absolute;
@@ -3428,7 +3432,6 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #49b1f5;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
